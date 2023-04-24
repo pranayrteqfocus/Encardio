@@ -476,12 +476,12 @@ section {
     border: 1px solid black;
 }
 
-.main-carousel>.carousel-control-prev-icon {
+.main-carousel>.carousel-control-prev>.carousel-control-prev-icon {
     background-image: url('../images/arrow-circle.png');
     transform: rotate(180deg);
 }
 
-.main-carousel>.carousel-control-next-icon {
+.main-carousel>.carousel-control-next>.carousel-control-next-icon {
     background-image: url('../images/arrow-circle.png');
 }
 
