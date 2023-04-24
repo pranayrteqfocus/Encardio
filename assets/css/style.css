@@ -454,8 +454,8 @@ section {
     transform: translateY(1px);
 }
 
-/* carousel Css Button */
-.carousel-control-next {
+/*  Main Carousel Css Button */
+.main-carousel>.carousel-control-next {
     position: absolute;
     height: fit-content;
     border-radius: 100%;
@@ -465,7 +465,7 @@ section {
     border: 1px solid black;
 }
 
-.carousel-control-prev {
+.main-carousel>.carousel-control-prev {
     position: absolute;
     height: fit-content;
     border-radius: 100%;
@@ -476,15 +476,16 @@ section {
     border: 1px solid black;
 }
 
-.carousel-control-prev-icon {
+.main-carousel>.carousel-control-prev-icon {
     background-image: url('../images/arrow-circle.png');
     transform: rotate(180deg);
 }
 
-.carousel-control-next-icon {
+.main-carousel>.carousel-control-next-icon {
     background-image: url('../images/arrow-circle.png');
 }
 
+/* End Main Carousel */
 
 /* Application understanding Page */
 .inside-page-section>.section-wrapper>.infoSection>.subline {
@@ -503,6 +504,9 @@ section {
     width: fit-content;
 }
 
+.small-image-wrapper {
+    display: none;
+}
 
 
 /* .img1 {
@@ -527,7 +531,16 @@ section {
 .img-box {
     border-radius: 8px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    height: 220px;
 
+}
+
+.row2>.img-box {
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 200px;
 }
 
 .app-title {
@@ -656,5 +669,18 @@ section {
 
     .white-logo {
         display: block;
+    }
+
+    .image-wrapper {
+        display: none;
+    }
+
+    .small-image-wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+        padding: 10px;
+        display: block;
+        width: fit-content;
     }
 }
