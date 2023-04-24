@@ -627,3 +627,34 @@ section {
     align-content: center;
     vertical-align: middle;
 }
+
+.color-logo {
+    display: none;
+}
+
+.white-logo {
+    display: block;
+}
+
+@media (max-width:786px) {
+    .sp-image {
+        width: 100%;
+    }
+
+    .bg-inside-img {
+        background-image: none;
+    }
+
+    .navbar-nav>.nav-item>.sp-active,
+    .text-white {
+        color: #080D12 !important;
+    }
+
+    .color-logo {
+        display: block;
+    }
+
+    .white-logo {
+        display: block;
+    }
+}
