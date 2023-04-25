@@ -8,7 +8,7 @@
     font-family: 'Everett-bold';
     src: url('/assets/font/Font/Everett-Bold.woff') format('woff2');
     font-weight: bold;
-}
+} 
 
 /* * {
     font-family: 'Everett-Regular';
@@ -488,7 +488,7 @@ section {
 /* End Main Carousel */
 
 /* Application understanding Page */
-.inside-page-section>.section-wrapper>.infoSection>.subline {
+.inside-page-section .section-wrapper .infoSection .subline {
     text-decoration: underline;
     text-decoration-color: #FEDD00;
     text-decoration-thickness: 2px;
@@ -683,4 +683,99 @@ section {
         display: block;
         width: fit-content;
     }
+}
+.content-height {
+    min-height: 70px;
+}
+.services .service-box h3 {
+    min-height: 60px;
+}
+.carousel-item {
+    width: 50%;
+    display: flexbox;
+
+}
+.carousel-fade .carousel-item {
+      opacity: 1;
+      transition-property: opacity;
+      transform: none;
+    }
+/* Responsive page layout */
+@media (max-width: 1400px) and (min-width : 1200px){
+    .ImageText h1 img {
+        max-width: 280px;
+    }
+    span.main_text.px-2 {
+        font-size: 50px;
+    }
+    span.sub_text {
+        line-height: 20px;
+    }
+}
+@media (max-width: 1200px) and (min-width : 992px) {
+    span.sub_text {
+        line-height: 20px;
+        width: 110px;
+    }
+    span.icon_sign {
+        color: #FFFFFF;
+        font-size: 50px;
+        margin: 0 -15px;
+    }
+    .ImageText h1 img {
+        max-width: 220px;
+    }
+}
+@media (max-width: 1200px){
+    .benefits-title{
+        min-height: 65px;
+    }
+    .video-container{
+        width: 100%;
+    }
+    .main-carousel>.carousel-control-prev{
+        left: 85%;
+    }
+}
+@media (max-width: 992px) {
+    .bgPatch{
+        background: none;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light{
+        margin-right: 0rem!important;
+    margin-left: 0rem!important;
+    }
+   
+    .ImageText h1 img {
+        max-width: 120px;
+        margin-top: 10px;
+    }
+    span.icon_sign {
+        color: #FFFFFF;
+        font-size: 40px;
+        margin: 0 -15px;
+    }
+    span.main_text.px-2 {
+        font-size: 35px;
+    }
+    span.sub_text {
+        font-size: 10px;
+        width: 100px;
+        height: max-content;
+        line-height: 1;
+    }
+    .ImageText h1 {
+        line-height: 0;
+    }
+}
+@media (max-width: 992px) and (min-width : 768px){
+    .container-fluid, .container {
+        max-width: 95%;
+    }
+}
+@media (max-width : 768px){
+    /* .ImageText h1 img {
+        max-width: 75px;
+        margin-top: 10px;
+    } */
 }
