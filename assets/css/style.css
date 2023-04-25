@@ -690,11 +690,11 @@ section {
 .services .service-box h3 {
     min-height: 60px;
 }
-.carousel-item {
+/* .carousel-item {
     width: 50%;
     display: flexbox;
 
-}
+} */
 .carousel-fade .carousel-item {
       opacity: 1;
       transition-property: opacity;
@@ -778,4 +778,51 @@ section {
         max-width: 75px;
         margin-top: 10px;
     } */
+}
+
+
+/* CArousel 2 */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    /* .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    } */
+}
+
+/* .carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+} */
+.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end{
+    opacity: 0;
+    z-index: 0;
+    display: none;
+}
+.carousel-fade .carousel-item-next.carousel-item-start{
+       display: none;
+}
+.carousel-item .col-md-6{
+    padding: 0 20px;
 }
