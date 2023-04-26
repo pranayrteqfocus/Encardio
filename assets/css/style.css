@@ -345,7 +345,7 @@ section {
     justify-content: center;
     color: #FFFFFF;
     align-items: center;
-    background-image: url(../images/bgFooter.svg);
+    background-image: url(../images/footer_bg.png);
     background-size: cover;
     height: 60vh;
     background-repeat: no-repeat;
@@ -700,6 +700,9 @@ section {
       transition-property: opacity;
       transform: none;
     }
+    .service-box{
+        padding: 20px 10px;
+    }
 /* Responsive page layout */
 @media (max-width: 1400px) and (min-width : 1200px){
     .ImageText h1 img {
@@ -778,18 +781,44 @@ section {
         max-width: 75px;
         margin-top: 10px;
     } */
+    h3.custom-title {
+        font-size: 20px;
+    }
+    h5.benefits-title {
+        min-height: auto;
+        font-size: 16px;
+        line-height: 1;
+    }
+    p.benefits-descp {
+        font-size: 14px;
+    }
+    .services .service-box h3 {
+        min-height: auto;
+        font-size: 16px;
+    }
+    .content-height p {
+        font-size: 11px;
+    }
+    .container.bg-cream.p-5 {
+        padding: 1rem !important;
+    }
+    h1.headerLine {
+        font-size: 24px;
+    }
+    p.subline {
+        font-size: 12px;
+        padding-top: 0.5rem !important;
+    }
+    .display_s-none{
+        display: none;
+    }
+    section {
+        margin-bottom: 0px;
+    }
 }
 
 
 /* CArousel 2 */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -825,4 +854,94 @@ section {
 }
 .carousel-item .col-md-6{
     padding: 0 20px;
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .slider-card img {
+        width: 40%;
+    }
+    span.main-carousel {
+        display: none;
+    }
+    div#myCarousel {
+        padding: 0;
+    }
+    .carousel-item .col-md-6 {
+        padding: 0;
+    }
+    h5.managers-title {
+        font-size: 16px;
+    }
+    p.managers-text {
+        font-size: 10px;
+    }
+    .container.bg-light-grey.p-5,.container.bg-light-blue.p-5 {
+        padding: 1rem !important;
+    }
+    .content-height{
+        min-height: auto;
+    }
+    .services .service-box img {
+        width: 25px;
+        height: auto;
+    }
+    .services .service-box{
+        min-height: auto;
+    }
+    .custom-card img {
+        width: 28px;
+        height: auto;
+    }
+    .custom-card{
+        min-height: auto;
+    }
+    .footer{
+        padding: 20px;
+        background-size: cover;
+    height: unset;
+    }   
+    h5.footer-title {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    p.footer-descp {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .footer span{
+        top: 0px !important;
+    }
+    .ImageText{
+        padding: 0 10px;
+    margin: 0;
+    }
+    .ImageText h1 {
+        font-size: 20px !important;
+    }
+    .ImageText h1 img {
+        max-width: 70px;
+        margin-top: 0px;
+    }
+    span.icon_sign {
+        font-size: 10px;
+    }
+    span.main_text.px-2 {
+        font-size: 17px;
+        margin-right: 4px;
+    }
+    span.main_text.px-2 {
+        font-size: 17px;
+        margin-right: 4px;
+    }
+    button#back-to-top-btn {
+        right: 50px;
+    }
+    .container.bg-black-gradient.p-5 {
+        padding: 2rem 1.5rem !important;
+    }
 }
