@@ -8,7 +8,7 @@
     font-family: 'Everett-bold';
     src: url('/assets/font/Font/Everett-Bold.woff') format('woff2');
     font-weight: bold;
-} 
+}
 
 /* * {
     font-family: 'Everett-Regular';
@@ -147,7 +147,7 @@ h3 {
 }
 
 .custom-card {
-    background: #FEDD00;
+    background: rgba(254, 221, 0, 0.15);
     border-radius: 16px;
     padding: 16px 24px;
     margin: 12px;
@@ -684,99 +684,123 @@ section {
         width: fit-content;
     }
 }
+
 .content-height {
     min-height: 70px;
 }
+
 .services .service-box h3 {
     min-height: 60px;
 }
+
 /* .carousel-item {
     width: 50%;
     display: flexbox;
 
 } */
 .carousel-fade .carousel-item {
-      opacity: 1;
-      transition-property: opacity;
-      transform: none;
-    }
-    .service-box{
-        padding: 20px 10px;
-    }
+    opacity: 1;
+    transition-property: opacity;
+    transform: none;
+}
+
+.service-box {
+    padding: 20px 10px;
+}
+
 /* Responsive page layout */
-@media (max-width: 1400px) and (min-width : 1200px){
+@media (max-width: 1400px) and (min-width : 1200px) {
     .ImageText h1 img {
         max-width: 280px;
     }
+
     span.main_text.px-2 {
         font-size: 50px;
     }
+
     span.sub_text {
         line-height: 20px;
     }
 }
+
 @media (max-width: 1200px) and (min-width : 992px) {
     span.sub_text {
         line-height: 20px;
         width: 110px;
     }
+
     span.icon_sign {
         color: #FFFFFF;
         font-size: 50px;
         margin: 0 -15px;
     }
+
     .ImageText h1 img {
         max-width: 220px;
     }
 }
-@media (max-width: 1200px){
-    .benefits-title{
+
+@media (max-width: 1200px) {
+    .benefits-title {
         min-height: 65px;
     }
-    .video-container{
+
+    .video-container {
         width: 100%;
     }
-    .main-carousel>.carousel-control-prev{
+
+    .main-carousel>.carousel-control-prev {
         left: 85%;
     }
 }
+
 @media (max-width: 992px) {
-    .bgPatch{
+    .bgPatch {
         background: none;
     }
-    nav.navbar.navbar-expand-lg.navbar-light{
-        margin-right: 0rem!important;
-    margin-left: 0rem!important;
+
+    nav.navbar.navbar-expand-lg.navbar-light {
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
     }
-   
+
     .ImageText h1 img {
         max-width: 120px;
         margin-top: 10px;
     }
+
     span.icon_sign {
         color: #FFFFFF;
         font-size: 40px;
         margin: 0 -15px;
     }
+
     span.main_text.px-2 {
         font-size: 35px;
     }
+
     span.sub_text {
         font-size: 10px;
         width: 100px;
         height: max-content;
         line-height: 1;
     }
+
     .ImageText h1 {
         line-height: 0;
     }
 }
-@media (max-width: 992px) and (min-width : 768px){
-    .container-fluid, .container {
+
+@media (max-width: 992px) and (min-width : 768px) {
+
+    .container-fluid,
+    .container {
         max-width: 95%;
     }
 }
-@media (max-width : 768px){
+
+@media (max-width : 768px) {
+
     /* .ImageText h1 img {
         max-width: 75px;
         margin-top: 10px;
@@ -784,34 +808,43 @@ section {
     h3.custom-title {
         font-size: 20px;
     }
+
     h5.benefits-title {
         min-height: auto;
         font-size: 16px;
         line-height: 1;
     }
+
     p.benefits-descp {
         font-size: 14px;
     }
+
     .services .service-box h3 {
         min-height: auto;
         font-size: 16px;
     }
+
     .content-height p {
         font-size: 11px;
     }
+
     .container.bg-cream.p-5 {
         padding: 1rem !important;
     }
+
     h1.headerLine {
         font-size: 24px;
     }
+
     p.subline {
         font-size: 12px;
         padding-top: 0.5rem !important;
     }
-    .display_s-none{
+
+    .display_s-none {
         display: none;
     }
+
     section {
         margin-bottom: 0px;
     }
@@ -844,103 +877,133 @@ section {
 .carousel-inner .carousel-item-start { 
     transform: translateX(0);
 } */
-.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end{
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
     opacity: 0;
     z-index: 0;
     display: none;
 }
-.carousel-fade .carousel-item-next.carousel-item-start{
-       display: none;
+
+.carousel-fade .carousel-item-next.carousel-item-start {
+    display: none;
 }
-.carousel-item .col-md-6{
+
+.carousel-item .col-md-6 {
     padding: 0 20px;
 }
+
 @media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
+    .carousel-inner .carousel-item>div {
         display: none;
     }
-    .carousel-inner .carousel-item > div:first-child {
+
+    .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
+
     .slider-card img {
         width: 40%;
     }
+
     span.main-carousel {
         display: none;
     }
+
     div#myCarousel {
         padding: 0;
     }
+
     .carousel-item .col-md-6 {
         padding: 0;
     }
+
     h5.managers-title {
         font-size: 16px;
     }
+
     p.managers-text {
         font-size: 10px;
     }
-    .container.bg-light-grey.p-5,.container.bg-light-blue.p-5 {
+
+    .container.bg-light-grey.p-5,
+    .container.bg-light-blue.p-5 {
         padding: 1rem !important;
     }
-    .content-height{
+
+    .content-height {
         min-height: auto;
     }
+
     .services .service-box img {
         width: 25px;
         height: auto;
     }
-    .services .service-box{
+
+    .services .service-box {
         min-height: auto;
     }
+
     .custom-card img {
         width: 28px;
         height: auto;
     }
-    .custom-card{
+
+    .custom-card {
         min-height: auto;
     }
-    .footer{
+
+    .footer {
         padding: 20px;
         background-size: cover;
-    height: unset;
-    }   
+        height: unset;
+    }
+
     h5.footer-title {
         font-size: 16px;
         line-height: 1.5;
     }
+
     p.footer-descp {
         font-size: 12px;
         line-height: 1.3;
     }
-    .footer span{
+
+    .footer span {
         top: 0px !important;
     }
-    .ImageText{
+
+    .ImageText {
         padding: 0 10px;
-    margin: 0;
+        margin: 0;
     }
+
     .ImageText h1 {
         font-size: 20px !important;
     }
+
     .ImageText h1 img {
         max-width: 70px;
         margin-top: 0px;
     }
+
     span.icon_sign {
         font-size: 10px;
     }
+
     span.main_text.px-2 {
         font-size: 17px;
         margin-right: 4px;
     }
+
     span.main_text.px-2 {
         font-size: 17px;
         margin-right: 4px;
     }
+
     button#back-to-top-btn {
         right: 50px;
     }
+
     .container.bg-black-gradient.p-5 {
         padding: 2rem 1.5rem !important;
     }
